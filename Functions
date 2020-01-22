@@ -1,0 +1,44 @@
+assignment2 <- c(16,18,14,22,27,17,19,17,17,22,20,22)
+
+myMean <- function(assignment2) {
+  return(sum(assignment)/length(someData))
+}
+
+Result:
+> myMean(assignment2)
+Error in myMean(assignment2) : object 'assignment' not found
+>
+
+This code shows error because the object 'assignment' does not exist. The object 'someData' does not exist either. 
+
+After specifying the object 'assignment2' - I re-wrote the function in order to call the mean. 
+
+Function updated - 
+
+assignment2 <- c(16,18,14,22,27,17,19,17,17,22,20,22)
+
+myMean <- function(assignment2) {
+  return(sum(assignment2)/length(assignment2))
+}
+
+Result:
+> myMean(assignment2)
+[1] 19.25
+
+------------- 
+> assignment2 <- c(16,18,14,22,27,17,19,17,17,22,20,22)
+> assignment3 <- c(5, 8, 4, 45, 56, 75, 43)
+> assignment4 <- c(45, 32, 56, 56, 12, 56, 87)
+> myMean <- function(x) {
++   return(sum(x)/length(x))
++ }
+> myMean
+function(x) {
+  return(sum(x)/length(x))
+}
+> myMean(assignment2)
+[1] 19.25
+> myMean(assignment3)
+[1] 33.71429
+> myMean(assignment4)
+[1] 49.14286
